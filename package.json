@@ -1,0 +1,23 @@
+{
+  "name": "myelectron",
+  "version": "1.0.0",
+  "description": "OBS challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron .",
+    "install": "node-gyp rebuild"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.6",
+    "node-gyp": "^10.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "bindings": "*",
+    "node-addon-api": "^8.0.0"
+  },
+  "gypfile": true
+}

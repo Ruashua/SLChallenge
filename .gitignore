@@ -1,0 +1,7 @@
+x64/
+.vs/
+obs/obs-studio/*
+obs/obs-deps/
+node_modules/
+package-lock.json
+build/
