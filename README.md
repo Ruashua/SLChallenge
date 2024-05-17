@@ -27,9 +27,13 @@ I figured it out in the end.
 
 I tried to do as many extras as I could, but I believe my build might have been slightly setup incorrectly.
 I stopped at trying to start the output to Twitch.  When I called
-obs_output_create("null_output", "null", nullptr, nullptr);
+
+> obs_output_create("null_output", "null", nullptr, nullptr);
+
 node.js was giving me a an error in the console window:
-[23080:0517/131944.996:ERROR:crashpad_client_win.cc(868)]
+
+> [23080:0517/131944.996:ERROR:crashpad_client_win.cc(868)]
+
 Attaching the VS debugger to the process, I found that the obs_output_create was causing a memory
 access violation in obs.dll.  That exact obs_output_create line I got from OBS's source code.  It should be a proven 
 function call.  
